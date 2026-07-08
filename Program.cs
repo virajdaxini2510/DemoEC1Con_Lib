@@ -6,14 +6,21 @@ using System.Threading.Tasks;
 
 namespace DemoEC1Con_Lib
 {
+    /// <summary>
+    /// Class student to demonstrate the use of methods in C#.
+    /// </summary>
     class Student
     {
-        // Data Members
+        /// <summary>
+        /// Fields to store student details: Roll Number, Name, and Course.
+        /// </summary>
         public int RollNo;
         public string Name;
         public string Course;
 
-        // Method 1 - Accept Student Details
+        /// <summary>
+        /// Gets student data from user input and stores it in the fields.
+        /// </summary>
         public void GetStudentData()
         {
             Console.Write("Enter Roll Number : ");
@@ -26,7 +33,9 @@ namespace DemoEC1Con_Lib
             Course = Console.ReadLine();
         }
 
-        // Method 2 - Display Student Details
+        /// <summary>
+        /// Displays the student data stored in the fields to the console.
+        /// </summary>
         public void DisplayStudentData()
         {
             Console.WriteLine("\n===== Student Details =====");
@@ -35,7 +44,9 @@ namespace DemoEC1Con_Lib
             Console.WriteLine("Course      : " + Course);
         }
 
-        // Main Method
+        /// <summary>
+        /// Main method to create a Student object, get student data, and display it.
+        /// </summary>
         static void Main()
         {
             Student s = new Student();
